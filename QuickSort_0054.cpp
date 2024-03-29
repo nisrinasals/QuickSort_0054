@@ -30,17 +30,20 @@ void input()
     }
 }
 
-void swap(int x, int y){
+void swap(int x, int y)
+{
     int temp = arr[x];
     arr[x] = arr[y];
     arr[y] = temp;
     mov_count++;
 }
 
-void q_short(int low, int high){
+void q_short(int low, int high)
+{
     int temp;
     int pivot, i, j;
-    if (low > high){
+    if (low > high)
+    {
         return;
     }
 
@@ -48,9 +51,11 @@ void q_short(int low, int high){
     i = low + 1;
     j = high;
 
-
-    while (i<=j){
-        
+    while (i <= j)
+    {
+        while ((arr[i] <= pivot) && (i <= high))
+        {
+        }
     }
 }
 
